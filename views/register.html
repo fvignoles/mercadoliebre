@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header-banner">
+            <a href="/">
+                <img src="./images/logo-mercado-liebre.svg" alt="Mercado Liebre">
+            </a>
+        </div>
+        <div class="header-search-bar">
+            <input class="header-search-bar-input" type="text" placeholder="Buscar productos, marcas">
+            <button class="fa fa-search header-search-bar-search" type="submit"></button>
+        </div>
+        <div class="header-quotes">
+            <i class="fas fa-hand-holding-usd headerquotes"></i>
+            Compra en cuotas y sin tarjeta de crédito
+        </div>
+        <div class="header-burger-menu-container">
+            <a href="#"></a><i class="fas fa-bars header-burger-menu-button"></i>
+        </div>
+        <nav class="header-left-menu">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+        <nav class="header-right-menu">
+            <ul>
+                <li><a href="/register">Creá tu cuenta</a><i class="far fa-address-card header-right-menu-icon"></i>
+                </li>
+                <li><a href="/login">Ingresá</a> <i class="fas fa-sign-in-alt header-right-menu-icon"></i></li>
+                <li><a href="#">Mis Compras</a><i class="fas fa-shopping-basket header-right-menu-icon"></i></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="form-register-container">
+        <div class="form-register-title">Registrate</div>
+        <form action="/" method="GET" class="form-register">
+            <label for="nombre">Nombre y Apellido (obligatorio)</label>
+            <input class="form-register-input" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido"
+                required>
+            <label for="usuario">Usuario (obligatorio)</label>
+            <input class="form-register-input" type="text" id="usuario" name="usuario" placeholder="usuario" required>
+            <label for="email">E-mail (obligatorio)</label>
+            <input class="form-register-input" type="text" id="email" name="email" placeholder="Correo Electrónico"
+                required>
+
+            <label for="fechaDeNacimiento"> Fecha de nacimiento</label>
+            <input class="form-register-input" type="date" id="fechaDeNacimiento" name="fechaDeNacimiento">
+            <label for="domicilio"> Domicilio</label>
+
+            <input class="form-register-input" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+
+            <label for="perfil">Perfil del usuario (obligatorio)</label>
+            <div style="flex-direction: row;">
+                <label for="comprar">Comprar <input type="radio" name="perfil" id="comprar" value="comprar"></label>
+                <label for="vender">Vender <input type="radio" name="perfil" id="vender" value="vender"></label>
+            </div>
+
+            <label for="categorias">Categorías de interés</label>
+            <div>
+                <label>Electro <input type="checkbox" name="categorias" value="electro"></label>
+                <label>Moda <input type="checkbox" name="categorias" value="moda"></label>
+                <label>Hogar <input type="checkbox" name="categorias" value="hogar"></label>
+                <label>Juguetería <input type="checkbox" name="categorias" value="jugueteria"></label>
+                <label>Vida sana <input type="checkbox" name="categorias" value="vida-sana"></label>
+            </div>
+            <label for="subeTuFoto">Sube tu Foto</label>
+            <input class="form-register-input" type="file" id="subeTuFoto" name="subeTuFoto">
+            <label for="password">Elige una contraseña (obligatorio)</label>
+            <input class="form-register-input" type="password" id="password" name="password" placeholder="contraseña"
+                required>
+            <label for="passwordconfirmed"> Confirma contraseña (obligatorio)</label>
+            <input class="form-register-input" type="password" id="passwordconfirmed" name="passwordconfirmed"
+                placeholder="Confirmar Contraseña" required>
+            <button class="submit" type="submit" name="" value="">Enviar</button>
+            <button class="reset" type="reset" name="" value="">Borrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
